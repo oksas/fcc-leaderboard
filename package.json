@@ -1,0 +1,29 @@
+{
+  "name": "fcc-leaderboard",
+  "version": "1.0.0",
+  "description": "Leaderboard for Free Code Camp brownie points",
+  "main": "index.js",
+  "scripts": {
+    "pregit": "git add .",
+    "git": "git commit -m",
+    "postgit": "git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oksas/fcc-leaderboard.git"
+  },
+  "keywords": [
+    "react",
+    "sass",
+    "css-modules"
+  ],
+  "author": "John Oksasoglu",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/oksas/fcc-leaderboard/issues"
+  },
+  "homepage": "https://github.com/oksas/fcc-leaderboard#readme",
+  "devDependencies": {
+    "webpack": "^1.12.15"
+  }
+}

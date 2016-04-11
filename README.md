@@ -1,1 +1,1 @@
-"# FreeCodeCamp Leaderboard" 
+# FreeCodeCamp Leaderboard
