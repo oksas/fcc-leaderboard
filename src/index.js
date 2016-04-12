@@ -1,2 +1,9 @@
-import greetings from './robot.js';
-document.write(greetings("Affirmative", "Dave"));
+import styles from "./app.css";
+
+let element = `
+  <div class="${styles.element}">
+    <p>Lorem supyo!</p>
+  </div>
+`;
+
+document.write(element);
