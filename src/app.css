@@ -7,4 +7,15 @@
 
 .element:hover {
   background-color: green;
+  margin-left: 2px;
+  width: 5px;
+  margin-top: 4px;
+  color: #aaa;
+  composes: element;
+  height: 5px;
+}
+
+.superElement {
+  composes: element;
+  color: yellow;
 }
