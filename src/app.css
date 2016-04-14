@@ -11,11 +11,10 @@
   width: 5px;
   margin-top: 4px;
   color: #aaa;
-  composes: element;
   height: 5px;
 }
 
-.superElement {
+.haha {
   composes: element;
   color: yellow;
 }

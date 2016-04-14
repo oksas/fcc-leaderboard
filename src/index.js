@@ -1,12 +1,18 @@
-import styles from "./app.css";
+import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './app.css';
 
-let element = `
-  <div class="${styles.element}">
-    <p>Lorem supyo!</p>
-  </div>
-  <div class="${styles.superElement}">
-    <p>Lorem supyo!</p>
-  </div>
-`;
+class Table extends React.Component {
+  render () {
+    return (
+      <div styleName='element'>
+        <div styleName='haha'>
+          <div styleName='element'>A0</div>
+          <div styleName='element'>B0</div>
+        </div>
+      </div>
+    );
+  }
+}
 
-document.write(element);
+export default CSSModules(Table, styles);
