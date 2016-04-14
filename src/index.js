@@ -1,6 +1,6 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import styles from './app.css';
+import styles from './app.scss';
 
 class Table extends React.Component {
   render () {

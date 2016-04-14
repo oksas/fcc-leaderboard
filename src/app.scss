@@ -1,3 +1,5 @@
+$rofl: green;
+
 .element {
   background-color: blue;
   color: white;
@@ -16,5 +18,5 @@
 
 .haha {
   composes: element;
-  color: yellow;
+  color: $rofl;
 }
