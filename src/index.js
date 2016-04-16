@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Table from "./table";
+import Leaderboard from "./Leaderboard";
 
 ReactDOM.render(
-	<Table />,
+	<Leaderboard />,
 	document.getElementById("app")
 );

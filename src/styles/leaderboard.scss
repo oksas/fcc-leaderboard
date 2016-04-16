@@ -1,0 +1,19 @@
+$bgcolor: #fafaff;
+$fontname: "Muli";
+
+body {
+  align-items: center;
+  background-color: $bgcolor;
+  display: flex;
+	font-family: $fontname, sans-serif;
+  height: 100%;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.leaderboard {
+  background: #ffffff;
+  box-shadow: 1px 1px 8px 0 #cccccc;
+  color: #555555;
+  width: 30rem;
+}
