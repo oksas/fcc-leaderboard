@@ -1,7 +1,9 @@
 .top {
-	width: 100%;
-	height: 4rem;
-	font-size: 0.75rem;
+	align-items: center;
 	background: #33333a;
 	color: #eef;
+	display: flex;
+	font-size: 0.75rem;
+	height: 4rem;
+	width: 100%;
 }

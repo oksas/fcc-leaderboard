@@ -1,0 +1,11 @@
+.cell {
+  box-sizing: border-box;
+	height: 100%;
+	padding: 1rem;
+}
+
+.top-cell {
+  @extend .cell;
+  align-items: center;
+  display: flex;
+}
