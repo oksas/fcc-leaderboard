@@ -1,5 +1,6 @@
 $bgcolor: #fafaff;
 $fontname: "Muli";
+$width: 30rem;
 
 body {
   align-items: center;
@@ -15,5 +16,5 @@ body {
   background: #ffffff;
   box-shadow: 1px 1px 8px 0 #cccccc;
   color: #555555;
-  width: 30rem;
+  width: $width;
 }
