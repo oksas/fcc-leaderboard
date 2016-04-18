@@ -6,7 +6,7 @@ import LeaderboardItem from "./LeaderboardItem";
 var sample = {
     rank: 1,
     user: "quincylarson",
-    picture: "some url",
+    picture: "https://avatars.githubusercontent.com/u/11624587?v=3",
     thirty: 40,
     alltime: 5000
 };

@@ -1,3 +1,15 @@
+$photoSize: 2rem;
+
 .user {
-  color: red;
+  margin-left: $photoSize + 0.5rem;
+}
+
+.picture {
+	border: 1px solid #cccccf;
+  border-radius: 2px;
+  bottom: 0;
+  height: $photoSize;
+  margin: auto;
+  position: absolute;
+  top: 0;
 }

@@ -5,8 +5,9 @@ import styles from "./styles/leaderboardUser.scss";
 class LeaderboardUser extends React.Component {
   render () {
     return (
-      <div styleName="user">
-        {this.props.user} + {this.props.picture}
+      <div>
+        <img styleName="picture" src={this.props.picture} />
+        <span styleName="user">{this.props.user}</span>
       </div>
     );
   }

@@ -14,6 +14,7 @@
 .user {
   @extend .cell;
   flex-grow: 1;
+  position: relative;
 }
 
 .thirty {
