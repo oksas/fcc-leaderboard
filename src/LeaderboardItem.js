@@ -8,10 +8,10 @@ class LeaderboardItem extends React.Component {
     return (
       <div styleName="item">
         hello! I'm a list item HAH!!
-        <LeaderboardCell/>
-        <LeaderboardCell/>
-        <LeaderboardCell/>
-        <LeaderboardCell/>
+        <LeaderboardCell style="rank"/>
+        <LeaderboardCell style="user"/>
+        <LeaderboardCell style="thirty"/>
+        <LeaderboardCell style="alltime"/>
       </div>
     );
   }

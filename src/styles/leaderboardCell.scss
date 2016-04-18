@@ -2,10 +2,26 @@
   box-sizing: border-box;
 	height: 100%;
 	padding: 1rem;
-}
-
-.top-cell {
-  @extend .cell;
   align-items: center;
   display: flex;
+}
+
+.rank {
+  @extend .cell;
+  width: 12%;
+}
+
+.user {
+  @extend .cell;
+  flex-grow: 1;
+}
+
+.thirty {
+  @extend .cell;
+  width: 25%;
+}
+
+.alltime {
+  @extend .cell;
+  width: 25%;
 }
