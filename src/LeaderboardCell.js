@@ -6,7 +6,7 @@ class LeaderboardCell extends React.Component {
   render () {
     return (
       <div styleName={this.props.style}>
-        cell
+        {this.props.children}
       </div>
     );
   }

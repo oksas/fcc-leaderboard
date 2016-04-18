@@ -7,11 +7,10 @@ class LeaderboardItem extends React.Component {
   render () {
     return (
       <div styleName="item">
-        hello! I'm a list item HAH!!
-        <LeaderboardCell style="rank"/>
-        <LeaderboardCell style="user"/>
-        <LeaderboardCell style="thirty"/>
-        <LeaderboardCell style="alltime"/>
+      <LeaderboardCell style="rank">Rank</LeaderboardCell>
+      <LeaderboardCell style="user">User</LeaderboardCell>
+      <LeaderboardCell style="thirty">30 Days</LeaderboardCell>
+      <LeaderboardCell style="alltime">All-time</LeaderboardCell>
       </div>
     );
   }

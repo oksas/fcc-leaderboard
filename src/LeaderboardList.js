@@ -7,7 +7,6 @@ class LeaderboardList extends React.Component {
   render () {
     return (
       <div>
-        hello! I'm a list!
         <LeaderboardItem/>
       </div>
     );
