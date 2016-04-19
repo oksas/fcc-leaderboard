@@ -1,15 +1,21 @@
-$bgcolor: #fafaff;
-$fontname: "Muli";
+$bgColor: #fafaff;
+$linkColor: pink;
+$fontName: "Muli";
 $width: 30rem;
 
 body {
   align-items: center;
-  background-color: $bgcolor;
+  background-color: $bgColor;
   display: flex;
-	font-family: $fontname, sans-serif;
+	font-family: $fontName, sans-serif;
   height: 100%;
   justify-content: center;
   margin-top: 8rem;
+  overflow: scroll;
+}
+
+a {
+  color: $linkColor;
 }
 
 .leaderboard {
@@ -17,4 +23,22 @@ body {
   box-shadow: 1px 1px 8px 0 #cccccc;
   color: #555555;
   width: $width;
+}
+
+:global .example-enter {
+  opacity: 0.01;
+}
+
+:global .example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+:global .example-leave {
+  opacity: 1;
+}
+
+:global .example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }

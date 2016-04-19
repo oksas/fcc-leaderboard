@@ -6,8 +6,12 @@ class LeaderboardUser extends React.Component {
   render () {
     return (
       <div>
-        <img styleName="img" src={this.props.img} />
-        <span styleName="username">{this.props.username}</span>
+        <a href={"https://freecodecamp.com/" + this.props.username}>
+          <img styleName="img" src={this.props.img} />
+          <span styleName="username">
+            {this.props.username}
+          </span>
+        </a>
       </div>
     );
   }

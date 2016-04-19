@@ -3,6 +3,7 @@ import CSSModules from "react-css-modules";
 import styles from "./styles/leaderboardList.scss";
 import LeaderboardItem from "./LeaderboardItem";
 import axios from "axios";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 var sample = {
     rank: 1,
@@ -13,8 +14,6 @@ var sample = {
 };
 
 class LeaderboardList extends React.Component {
-  // Set initial state to be fetched items
-  // map over each fetched item, and make leaderboard item
   constructor() {
     super();
     this.state = {
@@ -24,12 +23,10 @@ class LeaderboardList extends React.Component {
   }
 
   componentDidMount() {
-    console.log("Component did mount; calling getItems");
     this.getItems();
   }
 
   getItems() {
-    console.log("Making request for items");
     var url = "https://fcctop100.herokuapp.com/api/fccusers/top/recent";
     axios.get(url)
       .then(response => {
@@ -41,13 +38,20 @@ class LeaderboardList extends React.Component {
   }
 
   render () {
+    // If no items, just display a loading thing... so that there's at least a lil bit of white
+    var content = this.state.items.length > 1 ?
+      this.state.items.map((item, index) => (
+        <LeaderboardItem data={Object.assign({}, item, {
+          rank: index+1
+        })} key={item.username} />
+      ))
+      : <h1 styleName="loading">Loading...</h1>;
+
     return (
-      <div>
-        {this.state.items.map((item, index) => (
-          <LeaderboardItem data={Object.assign({}, item, {
-            rank: index+1
-          })} key={item.username} />
-        ))}
+      <div styleName="list">
+        <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+          {content}
+        </ReactCSSTransitionGroup>
       </div>
     );
   }

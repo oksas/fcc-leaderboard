@@ -1,3 +1,8 @@
 .list {
+  transition: height 10s ease;
+}
 
+.loading {
+  padding: 1rem;
+  text-align: center;
 }
