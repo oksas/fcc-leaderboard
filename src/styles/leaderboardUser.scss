@@ -1,14 +1,14 @@
-$photoSize: 2rem;
+$imgSize: 2rem;
 
-.user {
-  margin-left: $photoSize + 0.5rem;
+.username {
+  margin-left: $imgSize + 0.5rem;
 }
 
-.picture {
+.img {
 	border: 1px solid #cccccf;
   border-radius: 2px;
   bottom: 0;
-  height: $photoSize;
+  height: $imgSize;
   margin: auto;
   position: absolute;
   top: 0;

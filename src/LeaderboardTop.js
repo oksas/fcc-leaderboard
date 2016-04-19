@@ -9,7 +9,7 @@ class LeaderboardTop extends React.Component {
       <div styleName="top">
         <LeaderboardCell style="rank">Rank</LeaderboardCell>
         <LeaderboardCell style="user">User</LeaderboardCell>
-        <LeaderboardCell style="thirty">30 Days</LeaderboardCell>
+        <LeaderboardCell style="recent">30 Days</LeaderboardCell>
         <LeaderboardCell style="alltime">All-time</LeaderboardCell>
       </div>
     );

@@ -10,9 +10,9 @@ class LeaderboardItem extends React.Component {
       <div styleName="item">
         <LeaderboardCell style="rank">{this.props.data.rank}</LeaderboardCell>
         <LeaderboardCell style="user">
-          <LeaderboardUser user={this.props.data.user} picture={this.props.data.picture}/>
+          <LeaderboardUser username={this.props.data.username} img={this.props.data.img}/>
         </LeaderboardCell>
-        <LeaderboardCell style="thirty">{this.props.data.thirty}</LeaderboardCell>
+        <LeaderboardCell style="recent">{this.props.data.recent}</LeaderboardCell>
         <LeaderboardCell style="alltime">{this.props.data.alltime}</LeaderboardCell>
       </div>
     );
@@ -22,9 +22,9 @@ class LeaderboardItem extends React.Component {
 LeaderboardItem.propTypes = {
   data: React.PropTypes.shape({
     rank: React.PropTypes.number.isRequired,
-    user: React.PropTypes.string.isRequired,
-    picture: React.PropTypes.string.isRequired,
-    thirty: React.PropTypes.number.isRequired,
+    username: React.PropTypes.string.isRequired,
+    img: React.PropTypes.string.isRequired,
+    recent: React.PropTypes.number.isRequired,
     alltime: React.PropTypes.number.isRequired
   }).isRequired
 };

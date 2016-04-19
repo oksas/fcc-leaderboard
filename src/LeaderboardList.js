@@ -8,7 +8,7 @@ var sample = {
     rank: 1,
     user: "quincylarson",
     picture: "https://avatars.githubusercontent.com/u/11624587?v=3",
-    thirty: 48,
+    recent: 48,
     alltime: 5000
 };
 
@@ -29,17 +29,24 @@ class LeaderboardList extends React.Component {
   }
 
   getItems() {
-    console.log("Making fake request for items");
-    this.setState({
-      items: [sample, sample, sample, sample]
-    });
+    console.log("Making request for items");
+    var url = "https://fcctop100.herokuapp.com/api/fccusers/top/recent";
+    axios.get(url)
+      .then(response => {
+        console.log(response);
+        this.setState({
+          items: response.data
+        });
+      });
   }
 
   render () {
     return (
       <div>
-        {this.state.items.map(item => (
-          <LeaderboardItem data={item} />
+        {this.state.items.map((item, index) => (
+          <LeaderboardItem data={Object.assign({}, item, {
+            rank: index+1
+          })} key={item.username} />
         ))}
       </div>
     );
