@@ -14,6 +14,7 @@ class LeaderboardContainer extends React.Component {
       activeSort: "recent"
     };
     this.getItems = this.getItems.bind(this);
+    this.setSort = this.setSort.bind(this);
   }
 
   componentDidMount() {
@@ -36,9 +37,19 @@ class LeaderboardContainer extends React.Component {
       });
   }
 
+  setSort(filter) {
+    if (filter !== this.state.activeSort) {
+      this.setState({
+        activeSort: filter
+      });
+    }
+  }
+
   render () {
     var content = this.state.items.recent.length > 1 ?
-      <Leaderboard items={this.state.items[this.state.activeSort]}/> :
+      <Leaderboard
+        items={this.state.items[this.state.activeSort]}
+        setSort={this.setSort}/> :
       <LoadingSpinner/>;
 
     return (
