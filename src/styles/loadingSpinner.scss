@@ -1,0 +1,58 @@
+$factor: 2;
+$s1radius: $factor * 60px;
+$s2radius: $factor * 50px;
+$s3radius: $factor * 40px;
+$s4radius: $factor * 30px;
+$borderradius: $factor * 2px;
+
+.spinners {
+	height: $s1radius;
+	width: $s1radius;
+	margin: auto;
+}
+
+.spinner-1 {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+	box-sizing: border-box;
+	border: $borderradius solid transparent;
+	border-top: $borderradius solid #33333a;
+	border-radius: 50%;
+	height: $s1radius;
+	margin: auto;
+  position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+  width: $s1radius;
+}
+
+.spinner-2 {
+	@extend .spinner-1;
+  animation-duration: 3s;
+	height: $s2radius;
+	width: $s2radius;
+}
+
+.spinner-3 {
+	@extend .spinner-1;
+  animation-duration: 4s;
+	height: $s3radius;
+	width: $s3radius;
+}
+
+.spinner-4 {
+	@extend .spinner-1;
+  animation-duration: 5s;
+	height: $s4radius;
+	width: $s4radius;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(1turn);
+	}
+}

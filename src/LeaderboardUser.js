@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from "react-lazy-load";
 import CSSModules from "react-css-modules";
 import styles from "./styles/leaderboardUser.scss";
 
@@ -7,7 +8,9 @@ class LeaderboardUser extends React.Component {
     return (
       <div>
         <a href={"https://freecodecamp.com/" + this.props.username}>
-          <img styleName="img" src={this.props.img} />
+          <LazyLoad offsetVertical={100}>
+            <img styleName="img" src={this.props.img} />
+          </LazyLoad>
           <span styleName="username">
             {this.props.username}
           </span>

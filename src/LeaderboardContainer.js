@@ -1,5 +1,6 @@
 import React from "react";
 import Leaderboard from "./Leaderboard";
+import LoadingSpinner from "./LoadingSpinner";
 import axios from "axios";
 
 class LeaderboardContainer extends React.Component {
@@ -28,7 +29,7 @@ class LeaderboardContainer extends React.Component {
   render () {
     var content = this.state.items.length > 1 ?
       <Leaderboard items={this.state.items}/> :
-      <h1>Loading...</h1>;
+      <LoadingSpinner/>;
 
     return (
       <div>
