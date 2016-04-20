@@ -7,7 +7,11 @@ class LeaderboardContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-      items: []
+      items: {
+        recent: [],
+        alltime: []
+      },
+      activeSort: "recent"
     };
     this.getItems = this.getItems.bind(this);
   }
@@ -20,15 +24,21 @@ class LeaderboardContainer extends React.Component {
     var url = "https://fcctop100.herokuapp.com/api/fccusers/top/recent";
     axios.get(url)
       .then(response => {
+        console.log(response);
         this.setState({
-          items: response.data
+          items: {
+            recent: response.data,
+            alltime: response.data.concat().sort(function(a, b) {
+              return b.alltime - a.alltime;
+            })
+          }
         });
       });
   }
 
   render () {
-    var content = this.state.items.length > 1 ?
-      <Leaderboard items={this.state.items}/> :
+    var content = this.state.items.recent.length > 1 ?
+      <Leaderboard items={this.state.items[this.state.activeSort]}/> :
       <LoadingSpinner/>;
 
     return (
