@@ -8,7 +8,7 @@ class LeaderboardUser extends React.Component {
     return (
       <div>
         <a href={"https://freecodecamp.com/" + this.props.username}>
-          <LazyLoad offsetVertical={100}>
+          <LazyLoad offsetVertical={0}>
             <img styleName="img" src={this.props.img} />
           </LazyLoad>
           <span styleName="username">

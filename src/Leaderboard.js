@@ -8,7 +8,7 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 class Leaderboard extends React.Component {
   render () {
     return (
-      <ReactCSSTransitionGroup transitionName="example"
+      <ReactCSSTransitionGroup transitionName="board"
         transitionAppear={true} transitionAppearTimeout={500}
         transitionEnterTimeout={500} transitionLeaveTimeout={300}>
       <div styleName="leaderboard">

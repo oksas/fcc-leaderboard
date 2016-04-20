@@ -2,4 +2,4 @@
 
 ## TODO
 * Unit testing
-* Responsive design
+* Sorting
