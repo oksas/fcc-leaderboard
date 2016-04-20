@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Leaderboard from "./Leaderboard";
+import LeaderboardContainer from "./LeaderboardContainer";
 
 ReactDOM.render(
-	<Leaderboard />,
+	<LeaderboardContainer />,
 	document.getElementById("app")
 );

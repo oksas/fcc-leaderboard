@@ -25,20 +25,11 @@ a {
   width: $width;
 }
 
-:global .example-enter {
+:global .example-appear {
   opacity: 0.01;
 }
 
-:global .example-enter.example-enter-active {
+:global .example-appear.example-appear-active {
   opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-:global .example-leave {
-  opacity: 1;
-}
-
-:global .example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  transition: opacity .5s ease-in;
 }
