@@ -22,14 +22,18 @@ a {
   background: #ffffff;
   box-shadow: 1px 1px 8px 0 #cccccc;
   color: #555555;
+  position: relative;
+  top: 0;
   width: $width;
 }
 
 :global .example-appear {
   opacity: 0.01;
+  top: 10rem;
 }
 
 :global .example-appear.example-appear-active {
   opacity: 1;
-  transition: opacity .5s ease-in;
+  transition: all 0.8s ease;
+  top: 0;
 }

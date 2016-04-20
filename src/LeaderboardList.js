@@ -17,4 +17,8 @@ class LeaderboardList extends React.Component {
   }
 }
 
+LeaderboardList.propTypes = {
+  items: React.PropTypes.array.isRequired
+};
+
 export default CSSModules(LeaderboardList, styles);
