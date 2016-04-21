@@ -6,7 +6,7 @@ import LeaderboardItem from "./LeaderboardItem";
 class LeaderboardList extends React.Component {
   render () {
     return (
-      <div styleName="list">
+      <div>
         {this.props.items.map((item, index) => (
           <LeaderboardItem data={Object.assign({}, item, {
             rank: index+1

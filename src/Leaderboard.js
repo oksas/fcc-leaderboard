@@ -11,13 +11,16 @@ class Leaderboard extends React.Component {
       <ReactCSSTransitionGroup transitionName="board"
         transitionAppear={true} transitionAppearTimeout={500}
         transitionEnterTimeout={500} transitionLeaveTimeout={300}>
-      <div styleName="leaderboard">
-        <div onClick={this.handleClick}>
-          <LeaderboardTop setSort={this.props.setSort}
-            activeSort={this.props.activeSort}/>
-          <LeaderboardList items={this.props.items}/>
+        <div styleName="top">
+          <h1 styleName="top-header">Free Code Camp Leaderboard</h1>
         </div>
-      </div>
+        <div styleName="leaderboard">
+          <div onClick={this.handleClick}>
+            <LeaderboardTop setSort={this.props.setSort}
+              activeSort={this.props.activeSort}/>
+            <LeaderboardList items={this.props.items}/>
+          </div>
+        </div>
       </ReactCSSTransitionGroup>
     );
   }

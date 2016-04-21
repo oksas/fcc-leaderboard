@@ -9,20 +9,29 @@
   <title>Free Code Camp Leaderboard</title>
   <style>
     .repo-link {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+      display: none;
       opacity: 0.5;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
     }
 
     .repo-link:hover {
       opacity: 1;
     }
+
+    @media (min-width: 30rem) {
+      .repo-link {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="repo-link">
-      <a href="https://github.com/oksas/fcc-leaderboard"><img src="build/github_32.png" title="View source on GitHub" alt="GitHub logo" /></a>
+    <a href="https://github.com/oksas/fcc-leaderboard">
+      <img src="build/github_32.png" title="View source on GitHub" alt="GitHub logo" />
+    </a>
   </div>
   <div id="app"></div>
   <script src="build/bundle.js"></script>
