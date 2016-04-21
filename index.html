@@ -7,8 +7,23 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet" type="text/css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" rel="stylesheet" type="text/css">
   <title>Free Code Camp Leaderboard</title>
+  <style>
+    .repo-link {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      opacity: 0.5;
+    }
+
+    .repo-link:hover {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
+  <div class="repo-link">
+      <a href="https://github.com/oksas/fcc-leaderboard"><img src="build/github_32.png" title="View source on GitHub" alt="GitHub logo" /></a>
+  </div>
   <div id="app"></div>
   <script src="build/bundle.js"></script>
 </body>
