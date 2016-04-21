@@ -20,23 +20,31 @@ class LeaderboardTop extends React.Component {
 
 
   render () {
+
     return (
       <div styleName="top">
         <LeaderboardCell style="rank">Rank</LeaderboardCell>
         <LeaderboardCell style="user">User</LeaderboardCell>
-        <span onClick={this.handleRecentClick}>
+        <div styleName={this.props.activeSort === "recent" ?
+            "active-sort" :
+            "sort"}
+          onClick={this.handleRecentClick}>
           <LeaderboardCell style="recent">30 Days</LeaderboardCell>
-        </span>
-        <span onClick={this.handleAlltimeClick}>
+        </div>
+        <div styleName={this.props.activeSort === "alltime" ?
+            "active-sort" :
+            "sort"}
+          onClick={this.handleAlltimeClick}>
           <LeaderboardCell style="alltime">All-time</LeaderboardCell>
-        </span>
+        </div>
       </div>
     );
   }
 }
 
 LeaderboardTop.propTypes = {
-  setSort: React.PropTypes.func.isRequired
+  setSort: React.PropTypes.func.isRequired,
+  activeSort: React.PropTypes.string.isRequired
 };
 
 export default CSSModules(LeaderboardTop, styles);

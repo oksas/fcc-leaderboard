@@ -7,3 +7,16 @@
 	height: 4rem;
 	width: 100%;
 }
+
+.sort {
+	cursor: pointer;
+	height: 100%;
+	&:hover {
+		background: #55555a;
+	}
+}
+
+.active-sort {
+	@extend .sort;
+	background: #55555a;
+}

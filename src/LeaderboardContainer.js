@@ -49,7 +49,8 @@ class LeaderboardContainer extends React.Component {
     var content = this.state.items.recent.length > 1 ?
       <Leaderboard
         items={this.state.items[this.state.activeSort]}
-        setSort={this.setSort}/> :
+        setSort={this.setSort}
+        activeSort={this.state.activeSort}/> :
       <LoadingSpinner/>;
 
     return (

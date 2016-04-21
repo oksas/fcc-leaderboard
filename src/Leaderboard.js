@@ -13,7 +13,8 @@ class Leaderboard extends React.Component {
         transitionEnterTimeout={500} transitionLeaveTimeout={300}>
       <div styleName="leaderboard">
         <div onClick={this.handleClick}>
-          <LeaderboardTop setSort={this.props.setSort}/>
+          <LeaderboardTop setSort={this.props.setSort}
+            activeSort={this.props.activeSort}/>
           <LeaderboardList items={this.props.items}/>
         </div>
       </div>
@@ -24,7 +25,8 @@ class Leaderboard extends React.Component {
 
 Leaderboard.propTypes = {
   items: React.PropTypes.array.isRequired,
-  setSort: React.PropTypes.func.isRequired
+  setSort: React.PropTypes.func.isRequired,
+  activeSort: React.PropTypes.string.isRequired
 };
 
 export default CSSModules(Leaderboard, styles);
