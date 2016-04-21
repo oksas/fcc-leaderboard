@@ -3,8 +3,8 @@ $linkColor: #089673;
 $fontName: "Muli";
 $width: 30rem;
 
-::-moz-selection { background: hsl(340, 90%, 60%); color: white; }
-::selection { background: hsl(340, 90%, 60%); color: white; }
+::-moz-selection { background: $linkColor; color: white; }
+::selection { background: $linkColor; color: white; }
 
 body {
   align-items: center;

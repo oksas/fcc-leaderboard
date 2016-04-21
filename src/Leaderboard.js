@@ -12,7 +12,7 @@ class Leaderboard extends React.Component {
         transitionAppear={true} transitionAppearTimeout={500}
         transitionEnterTimeout={500} transitionLeaveTimeout={300}>
         <div styleName="top">
-          <h1 styleName="top-header">Free Code Camp Leaderboard</h1>
+          <h1 styleName="top-header">Free Code Camp Top 100</h1>
         </div>
         <div styleName="leaderboard">
           <div onClick={this.handleClick}>
