@@ -2,3 +2,4 @@ node_modules
 build/*
 !build/github_32.png
 npm-debug.log
+.c9
