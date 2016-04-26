@@ -6,6 +6,13 @@ $width: 30rem;
 ::-moz-selection { background: $linkColor; color: white; }
 ::selection { background: $linkColor; color: white; }
 
+html {
+  font-size: 14px;
+  @media (min-width: 25rem) {
+    font-size: 16px;
+  }
+}
+
 body {
   align-items: center;
   background-color: $bgColor;
