@@ -28,7 +28,7 @@
     "url": "https://github.com/oksas/fcc-leaderboard/issues"
   },
   "homepage": "https://github.com/oksas/fcc-leaderboard#readme",
-  "devDependencies": {
+  "dependencies": {
     "axios": "^0.9.1",
     "babel-core": "^6.7.6",
     "babel-loader": "^6.2.4",
