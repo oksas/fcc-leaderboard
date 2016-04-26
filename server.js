@@ -3,7 +3,6 @@ var express = require("express");
 var app = express();
 
 var port = process.env.PORT || 4040;
-// var address = process.env.IP || "localhost";
 
 app.use(express.static(__dirname));
 
