@@ -7,8 +7,11 @@
     "pregit": "git add .",
     "git": "git commit -m",
     "postgit": "git push",
-    "build": "webpack",
-    "start": "webpack && node server"
+    "watch:dev": "webpack --watch",
+    "build:dev": "webpack",
+    "build:prod": "webpack --minimize",
+    "prestart": "npm run build:prod",
+    "start": "node server"
   },
   "repository": {
     "type": "git",

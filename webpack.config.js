@@ -1,4 +1,11 @@
 var path = require("path");
+var webpack = require("webpack");
+var minimize = process.argv.indexOf("--minimize") !== -1;
+var plugins = [];
+
+if (minimize) {
+  plugins.push(new webpack.optimize.UglifyJsPlugin());
+}
 
 module.exports = {
   entry: "./src",
@@ -6,6 +13,7 @@ module.exports = {
     path: "build",
     filename: "bundle.js"
   },
+  plugins: plugins,
   module: {
     loaders: [
       {
