@@ -1,6 +1,10 @@
 # Free Code Camp Leaderboard
 A small React app that fetches data on [Free Code Camp](https://www.freecodecamp.com)'s top users, from [an external API](https://fcctop100.herokuapp.com/api/fccusers/top/recent), and displays them to the user in a custom interface. The list can be sorted either by recent points or all-time points.
 
+## Check it out
+
+Currently live at [http://top-dawgs.herokuapp.com/](http://top-dawgs.herokuapp.com/).
+
 ## ⚛ React Component Breakdown
 
 ### Leaderboard Container
