@@ -9,8 +9,8 @@ class Leaderboard extends React.Component {
   render () {
     return (
       <ReactCSSTransitionGroup transitionName="board"
-        transitionAppear={true} transitionAppearTimeout={500}
-        transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+        transitionAppear={true} transitionAppearTimeout={800}
+        transitionEnterTimeout={800} transitionLeaveTimeout={300}>
         <div styleName="top">
           <h1 styleName="top-header">Free Code Camp Top 100</h1>
         </div>
