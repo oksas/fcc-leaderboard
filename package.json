@@ -7,8 +7,8 @@
     "pregit": "git add .",
     "git": "git commit -m",
     "postgit": "git push",
-    "prestart": "webpack --watch",
-    "start": "node server"
+    "build": "webpack",
+    "start": "webpack && node server"
   },
   "repository": {
     "type": "git",
